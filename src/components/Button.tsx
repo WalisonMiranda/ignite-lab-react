@@ -1,4 +1,12 @@
-export function Button({ variant, href, children }) {
+import { ReactNode } from "react";
+
+interface ButtonProps {
+  variant: string;
+  href: string;
+  children: ReactNode;
+}
+
+export function Button({ variant, href, children }: ButtonProps) {
   return (
     <>
     { variant === 'primary' ?
